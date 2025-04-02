@@ -1,7 +1,7 @@
 # requirements.txt
 
 # Cliente para la API de OpenAI
-openai>=1.0.0
+openai==0.28.0
 
 # Framework para construir la API con FastAPI
 fastapi>=0.78.0

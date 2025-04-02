@@ -34,6 +34,7 @@ class GPT4Integration:
             f"Resultado de la predicción: \"{prediction}\"\n\n"
             "Genera una respuesta final que sea extremadamente clara, profesional y empática, "
             "informando al usuario del resultado de forma precisa y sin ambigüedades."
+            "Limita tu respuesta a un máximo de 150 tokens."
         )
         try:
             response = openai.ChatCompletion.create(
