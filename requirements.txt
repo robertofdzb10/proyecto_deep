@@ -1,0 +1,13 @@
+# requirements.txt
+
+# Cliente para la API de OpenAI
+openai>=1.0.0
+
+# Framework para construir la API con FastAPI
+fastapi>=0.78.0
+
+# Servidor ASGI para FastAPI
+uvicorn>=0.17.0
+
+# Biblioteca para cargar variables de entorno desde un archivo .env
+python-dotenv>=0.21.0

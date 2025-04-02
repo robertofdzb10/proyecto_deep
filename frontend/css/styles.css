@@ -1,0 +1,107 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f7f7f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal del chat */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 500px;           /* Ajusta este valor para aumentar/reducir el ancho máximo */
+    height: 80vh;               /* Ocupa el 80% de la altura de la ventana */
+    min-height: 600px;          /* Asegura un mínimo de altura para pantallas pequeñas */
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Encabezado del chat */
+.chat-header {
+    background: #007bff;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Cuerpo del chat donde aparecen los mensajes */
+.chat-body {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #fafafa;
+}
+
+/* Pie del chat con el input y el botón de enviar */
+.chat-footer {
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding: 20px;
+    background: #f0f0f0;
+}
+
+.chat-footer input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.chat-footer button {
+    margin-left: 10px;
+    padding: 12px 20px;
+    background: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.chat-footer button:hover {
+    background: #0056b3;
+}
+
+/* Mensajes del chat */
+.message {
+    margin-bottom: 15px;
+    max-width: 80%;
+    line-height: 1.4;
+    padding: 12px;
+    border-radius: 8px;
+    clear: both;
+    font-size: 0.95rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Mensajes del usuario (alineados a la derecha) */
+.user-message {
+    background: #007bff;
+    color: #ffffff;
+    float: right;
+    border-top-right-radius: 0;
+}
+
+/* Mensajes del agente (alineados a la izquierda) */
+.agent-message {
+    background: #e4e6eb;
+    color: #000000;
+    float: left;
+    border-top-left-radius: 0;
+}
